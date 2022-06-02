@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <link rel="icon" href="img/favicon.jpeg">
+</head>
+
+<body>
+    <header>
+        <h1>Preencha o formulário com seus dados.</h1>
+    </header>
+
+    <main>
+        <div>
+            <form>
+                <div>
+                    <label for="nome">Nome completo:</label>
+                </div>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required="true">
+                
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <input type="text" id="email" name="email" placeholder="Digite seu email aqui..." required="true">
+
+                <div>
+                    <label for="descricao">Descrição</label>
+                </div>
+                <textarea name="descricao" id="descricao" cols="21" rows="10" placeholder="Fale mais sobre você" maxlength="300"></textarea>
+
+                <div>
+                    <label for="modulo">Módulo</label>
+                </div>
+                <select name="modulo" id="modulo" required="true">
+                    <option value="">Escolha seu Módulo</option>
+                    <option value="m1">Módulo 1</option>
+                    <option value="m2">Módulo 2</option>
+                    <option value="m3">Módulo 3</option>
+                    <option value="m4">Módulo 4</option>
+                    <option value="m5">Módulo 5</option>
+                    <option value="m6">Módulo 6</option>
+                </select>
+
+                <div>
+                    <label for="senha">Senha</label>
+                </div>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui..." required="true">
+
+                <div>
+                    <label for="confirmacaosenha">Confirmar senha</label>
+                </div>
+                <input type="password" name="confirmacaosenha" id="confirmacaosenha" placeholder="Digite sua senha novamente aqui..." required="true">
+
+                <p>Deseja receber novidades em seu e-mail?</p>
+                <label for="">Sim</label>
+                <input type="radio" name="simounao" id="simounao" required="true">
+                <label for="">Não</label>
+                <input type="radio" name="simounao" id="simounao" required="true">
+                <div></div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>
